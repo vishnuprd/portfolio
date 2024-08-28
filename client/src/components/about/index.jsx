@@ -52,33 +52,33 @@ export default function About() {
     <div className="hero bg-base-200 min-h-screen p-4">
       <div className="hero-content flex flex-col lg:flex-row-reverse gap-8">
         <div className="main flex flex-col items-center w-full lg:w-1/2">
-          <div className="up grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-2 xl:grid-cols-3">
+          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-2 xl:grid-cols-3">
             {AboutItems.map(item => (
               <div
                 key={item.id}
                 className="cursor-pointer border p-4 rounded-lg hover:scale-105 transition-transform duration-500 flex flex-col items-center"
               >
-                <div className="icon-container flex items-center justify-center">
-                  <i className={item.icon + " text-3xl"}></i>
+                <div className="icon-container flex items-center justify-center mb-2">
+                  <i className={`${item.icon} text-3xl`}></i>
                 </div>
-                <div className="icon-name mt-2 text-lg text-center">{item.name}</div>
+                <div className="icon-name text-lg text-center">{item.name}</div>
               </div>
             ))}
           </div>
         </div>
 
-        <div className="max-w-md mx-auto lg:w-1/2">
-          <h1 className="scroll-m-20 text-3xl md:text-4xl font-extrabold tracking-tight py-6">Get To Know More</h1>
-          <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight">About Me</h3>
-          <div className="flex w-full flex-col md:flex-row items-center md:items-start">
-            <div className="card rounded-box grid h-20 flex-grow place-items-center m-2">
-              <i className='bx bx-bulb text-3xl'></i> 
-              <h3 className="scroll-m-20 text-xl font-semibold tracking-tight text-center">Experience</h3>
+        <div className="lg:w-1/2">
+          <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight py-6">Get To Know More</h1>
+          <h3 className="text-2xl font-semibold tracking-tight">About Me</h3>
+          <div className="flex flex-col md:flex-row items-start">
+            <div className="card rounded-box grid h-20 flex-grow place-items-center mb-4 md:mb-0 md:mr-4">
+              <i className='bx bx-bulb text-3xl'></i>
+              <h3 className="text-xl font-semibold tracking-tight text-center mt-2">Experience</h3>
             </div>
             <div className="divider divider-horizontal hidden md:block">|</div>
-            <div className="card rounded-box grid h-20 flex-grow place-items-center m-2">
-              <i className='bx bxs-graduation text-3xl'></i> 
-              <h3 className="scroll-m-20 text-xl font-semibold tracking-tight text-center">Frontend/Full Stack Developer</h3>
+            <div className="card rounded-box grid h-20 flex-grow place-items-center mb-4 md:mb-0 md:ml-4">
+              <i className='bx bxs-graduation text-3xl'></i>
+              <h3 className="text-xl font-semibold tracking-tight text-center mt-2">Frontend/Full Stack Developer</h3>
             </div>
           </div>
           <div className="card-body mt-6">

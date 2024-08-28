@@ -13,9 +13,8 @@ export default function Hero() {
   return (
     <div className={`hero ${theme === "dark" ? "dark" : "light"} min-h-screen relative flex flex-col lg:flex-row items-center justify-center p-4 lg:p-8`}>
       <div className="hero-content flex flex-col lg:flex-row-reverse items-center lg:items-start lg:justify-between relative z-10 w-full lg:w-3/4">
-        {/* Profile Photo Section */}
         <div className="flex justify-center lg:justify-end mb-6 lg:mb-0">
-          <div className="card-heropage rounded-full w-[200px] h-[200px] md:w-[250px] md:h-[250px] lg:w-[300px] lg:h-[300px] overflow-hidden shadow-lg">
+          <div className="card-heropage rounded-full w-[200px] h-[200px] md:w-[250px] md:h-[250px] lg:w-[200px] lg:h-[300px] overflow-hidden shadow-lg">
             <img
               className="rounded-full"
               src={Profilephoto}
