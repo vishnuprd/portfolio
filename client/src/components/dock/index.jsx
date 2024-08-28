@@ -26,7 +26,7 @@ export default function Dock() {
         {
             id: "2",
             name: "About",
-            path: "/blogs",
+            path: "/about",
             icon: (
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -85,7 +85,7 @@ export default function Dock() {
     ];
 
     return (
-        <ul className="fixed bottom-8 left-1/2 transform -translate-x-1/2 menu menu-horizontal bg-base-200 text-black rounded-box rounded-t-xl shadow-lg p-2 flex items-center space-x-4 max-w-3xl">
+        <ul className="fixed bottom-12 left-1/2 transform -translate-x-1/2 menu menu-horizontal bg-base-200 text-black rounded-box rounded-t-xl shadow-lg p-2 flex items-center space-x-4 max-w-3xl">
             {dockItems.map(item => (
                 <li key={item.id} className="relative group flex items-center">
                     {item.external ? (
