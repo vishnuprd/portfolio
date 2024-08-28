@@ -1,0 +1,57 @@
+/* Light mode styles */
+.hero {
+    background-color: #ffffff; /* Light background */
+    color: #000000; /* Light text color */
+}
+
+.hero-content {
+    border-color: #e5e7eb; /* Light border color */
+}
+
+.btn {
+    background-color: #1f2937; /* Dark button background for light mode */
+    color: #ffffff; /* Light button text color */
+}
+
+/* Dark mode styles */
+.dark .hero {
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text color for dark mode */
+}
+
+.dark .hero-content {
+    border-color: #333333; /* Dark gray border color */
+}
+
+.dark .btn {
+    background-color: #333333; /* Dark gray button background for dark mode */
+    color: #ffffff; /* White button text color */
+}
+
+
+.text-effect {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+    animation-delay: calc(0.1s * var(--index));
+    display: inline-block;
+}
+
+/* Keyframes for the fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Tailwind style for glow effect */
+

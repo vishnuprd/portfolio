@@ -1,0 +1,39 @@
+/* Styles for the icons */
+.icon-container {
+    position: relative;
+    display: inline-block;
+    margin-right: 1rem; /* Adjust spacing between icons */
+  }
+  
+  .icon-container .bx {
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .icon-container:hover .bx {
+    transform: scale(1.2); /* Scale the icon on hover */
+    color: #0077b5; /* Change color (for LinkedIn) or another color for GitHub */
+  }
+  
+  .icon-container:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  
+  /* Styles for tooltips */
+  .tooltip {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-10px);
+    padding: 0.5rem;
+    background-color: #333;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
