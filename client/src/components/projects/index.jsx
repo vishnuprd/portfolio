@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion'; 
 import "../../styles/projectpage.css";
 
-function ProjectCard({ project }) {
+function Projects() {
   const [isReadMore, setIsReadMore] = useState(false);
 
   const toggleReadMore = () => {
